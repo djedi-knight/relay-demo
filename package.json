@@ -5,12 +5,19 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-relay": "^1.6.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql"
+  },
+  "devDependencies": {
+    "babel-plugin-relay": "^1.6.0",
+    "graphql": "^0.13.2",
+    "relay-compiler": "^1.6.0"
   }
 }
